@@ -1,0 +1,58 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>🔧Placa Madre (Motherboard)</title>
+  <link rel="stylesheet" href="Style/placamadre.css">
+</head>
+<body>
+  <div class="contenido">
+    <h1>🔧 Placa Madre (Motherboard)</h1>
+    <div class="media">
+      <div class="texto">
+        <p>La placa madre es el componente principal del computador. En ella se conectan el procesador, la memoria, los discos y otros periféricos. Permite que todos los componentes se comuniquen entre sí.</p>
+         <h2>Caracteristicas de la Placa Madre</h2>
+  <ul>
+    <li><strong>Conexión:</strong> Une todos los componentes de la PC.</li>
+    <li><strong>Soporte:</strong> Aloja CPU, RAM, tarjetas y periféricos.</li>
+    <li><strong>Comunicación:</strong> Permite que los componentes intercambien datos.</li>
+  </ul>
+      </div>
+      <div class="imagen">
+        <img src="Imagenes/placa.madre.jpg" alt="Placa Madre (Motherboard)"> 
+      </div>
+    </div>
+ <div style="margin: 15px 0; text-align: center;">
+    <a href="#videoModal" class="btn">Ver video explicativo</a>
+  </div>
+
+  <div class="cuadro-regresar">
+    <a href="../Pag_Principal.html">⬅️ Regresar</a>
+  </div>
+</div>
+
+<div id="videoModal" class="modal">
+  <div class="modal-content">
+    <a href="#" class="close">&times;</a>
+    <iframe src="" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+    </iframe>
+  </div>
+</div>
+<script>
+  const closeBtn = document.querySelector('.close');
+  const iframe = document.querySelector('#videoModal iframe');
+
+  closeBtn.addEventListener('click', () => {
+    iframe.src = iframe.src;  
+  });
+</script>
+
+  </div>
+</body>
+</html>
+
+
+     

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>❄️Ventiladores y Sistema de Enfriamiento</title>
+  <link rel="stylesheet" href="Style/ventiladores.css">
+</head>
+<body>
+  <div class="contenido">
+    <h1>❄️ Ventiladores y Sistema de Enfriamiento</h1>
+    <div class="media">
+      <div class="texto">
+        <p>Evitan el sobrecalentamiento del sistema. Mantienen la temperatura adecuada para un funcionamiento eficiente.</p>
+         <h2>Caracteristicas del Ventilador de la Computadora</h2>
+  <ul>
+    <li><strong>Enfriamiento:</strong> Mantiene los componentes a temperatura adecuada.</li>
+    <li><strong>Prevención:</strong> Evita sobrecalentamiento y daños.</li>
+    <li><strong>Rendimiento:</strong> Mejora la estabilidad del sistema.</li>
+  </ul>
+      </div>
+      <div class="imagen">
+        <img src="Imagenes/ventiladores.jpg" alt="Ventiladores y Sistema de Enfriamiento">
+      </div>
+    </div>
+    <div style="margin: 15px 0; text-align: center;">
+    <a href="#videoModal" class="btn">Ver video explicativo</a>
+  </div>
+
+  <div class="cuadro-regresar">
+    <a href="../Pag_Principal.html">⬅️ Regresar</a>
+  </div>
+</div>
+
+<div id="videoModal" class="modal">
+  <div class="modal-content">
+    <a href="#" class="close">&times;</a>
+    <iframe width="1248" height="707" src="https://www.youtube.com/embed/OaHsLiDUBDM" title="Ventilador De Computadora " frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+</div>
+<script>
+  const closeBtn = document.querySelector('.close');
+  const iframe = document.querySelector('#videoModal iframe');
+
+  closeBtn.addEventListener('click', () => {
+    iframe.src = iframe.src;  
+  });
+</script>
+</body>
+</html>
+

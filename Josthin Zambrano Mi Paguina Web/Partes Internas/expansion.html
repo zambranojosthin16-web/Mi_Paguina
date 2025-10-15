@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>💳Tarjeta de Expansión</title>
+  <link rel="stylesheet" href="Style/expansion.css">
+</head>
+<body>
+  <div class="contenido">
+    <h1>💳 Tarjeta de Expansión</h1>
+    <div class="media">
+      <div class="texto">
+        <p>La <strong>tarjeta de expansión</strong> es un dispositivo que se inserta en la placa madre para agregar nuevas funcionalidades a la computadora, como mejorar el rendimiento gráfico, agregar puertos extra, sonido, red, entre otros.</p>
+        <h2>Características de la Tarjeta de Expansión</h2>
+  <ul>
+    <li><strong>Ampliación:</strong> Permite agregar funciones adicionales a la PC.</li>
+    <li><strong>Compatibilidad:</strong> Se conecta a ranuras de la placa madre (PCI, PCIe, etc.).</li>
+    <li><strong>Versatilidad:</strong> Puede ser de video, sonido, red u otras especialidades.</li>
+  </ul>
+      </div>
+      <div class="imagen">
+        <img src="Imagenes/tarjetadeexpansion.jpg" alt="Tarjeta de Expansión">
+      </div>
+    </div>
+    
+    <div style="margin: 15px 0; text-align: center;">
+      <a href="#videoModal" class="btn">Ver video explicativo</a>
+    </div>
+
+    <div class="cuadro-regresar">
+      <a href="../Pag_Principal.html">⬅️ Regresar</a>
+    </div>
+  </div>
+
+  <div id="videoModal" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close">&times;</a>
+      <iframe width="1345" height="762" src="https://www.youtube.com/embed/FfjUoqJgMbA" title="Tarjeta De Expansión ( Red )" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <script>
+    const closeBtn = document.querySelector('.close');
+    const iframe = document.querySelector('#videoModal iframe');
+
+    closeBtn.addEventListener('click', () => {
+      iframe.src = iframe.src;  
+    });
+  </script>
+</body>
+</html>

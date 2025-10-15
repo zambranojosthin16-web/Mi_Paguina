@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>🔧Ensamblaje y Conexión</title>
+  <link rel="stylesheet" href="Style/ensamblajeyconexion.css">
+  <style> 
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.7);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-content {
+      background: #fff;
+      padding: 10px;
+      border-radius: 12px;
+      position: relative;
+      width: 550px;    
+      height: 450px;  
+      box-shadow: 0 0 15px rgba(0,0,0,0.4);
+      animation: aparecer 0.3s ease;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    @keyframes aparecer {
+      from {opacity: 0; transform: scale(0.9);}
+      to {opacity: 1; transform: scale(1);}
+    }
+
+    .close {
+      position: absolute;
+      top: 5px;
+      right: 15px;
+      text-decoration: none;
+      font-size: 28px;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .close:hover {
+      color: red;
+    }
+
+    iframe {
+      width: 500px;
+      height: 375px;  
+      border-radius: 8px;
+      border: none;
+    }
+
+    .btn {
+      background: #1e3a8a;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .btn:hover {
+      background: #2563eb;
+    }
+ 
+    @media (max-width: 600px) {
+      .modal-content {
+        width: 90%;
+        height: auto;
+      }
+      iframe {
+        width: 100%;
+        height: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="contenido">
+    <h1>🔧 Ensamblaje y Conexión</h1>
+    <div class="media">
+      <div class="texto">
+        <p>El <strong>ensamblaje y conexión</strong> de componentes de una computadora es el proceso mediante el cual se integran físicamente partes como el procesador, la memoria RAM, el disco duro, la placa madre, entre otros, para formar un sistema funcional.</p>
+        <h2>Pasos clave en el Ensamblaje</h2>
+        <ul>
+          <li><strong>Instalación de la Placa Madre:</strong> Se coloca cuidadosamente en el gabinete y se asegura con tornillos.</li>
+          <li><strong>Conexión del Procesador y RAM:</strong> Se insertan en sus respectivos sockets.</li>
+          <li><strong>Montaje de Almacenamiento:</strong> Discos duros o SSD conectados a través de cables SATA o M.2.</li>
+          <li><strong>Fuente de Poder:</strong> Se conecta para distribuir energía a todos los componentes.</li>
+        </ul>
+      </div>
+      <div class="imagen">
+        <img src="Imagenes/ensamblaje.jpg" alt="">
+      </div>
+    </div>
+
+    <div style="margin: 15px 0; text-align: center;">
+      <a href="#" class="btn" id="openModal">Ver video explicativo</a>
+    </div>
+
+    <div class="cuadro-regresar">
+      <a href="../Pag_Principal.html">⬅️ Regresar</a>
+    </div>
+  </div>
+ 
+  <div id="videoModal" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close">&times;</a>
+      <iframe width="1257" height="707" src="https://www.youtube.com/embed/6iDc6RmXcQ8" title="Ensamble y Conexión " frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <script>
+    const openModal = document.getElementById('openModal');
+    const closeBtn = document.querySelector('.close');
+    const modal = document.getElementById('videoModal');
+    const iframe = modal.querySelector('iframe');
+
+    openModal.addEventListener('click', (e) => {
+      e.preventDefault();
+      modal.style.display = 'flex';
+    });
+
+    closeBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      modal.style.display = 'none';
+      iframe.src = iframe.src;  
+    });
+
+    window.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.style.display = 'none';
+        iframe.src = iframe.src;
+      }
+    });
+  </script>
+</body>
+</html>

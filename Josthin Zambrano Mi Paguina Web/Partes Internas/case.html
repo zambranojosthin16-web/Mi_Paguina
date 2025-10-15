@@ -1,0 +1,51 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>🖥️Case (Gabinete)</title>
+  <link rel="stylesheet" href="Style/case.css">
+</head>
+<body>
+  <div class="contenido">
+    <h1>🖥️ Case o Gabinete</h1>
+    <div class="media">
+      <div class="texto">
+        <p>El <strong>Case</strong>, también conocido como <strong>gabinete</strong>, es la estructura física que alberga los componentes internos de una computadora como la placa madre, fuente de poder, procesador, memoria RAM, discos y más.</p>
+        <h2>Características del Case</h2>
+  <ul>
+    <li><strong>Protección:</strong> Resguarda los componentes internos de la PC.</li>
+    <li><strong>Organización:</strong> Facilita la colocación de hardware y cables.</li>
+    <li><strong>Ventilación:</strong> Permite flujo de aire para enfriar los componentes.</li>
+  </ul>
+      </div>
+      <div class="imagen">
+        <img src="Imagenes/case.jpg" alt="Case o Gabinete">
+      </div>
+    </div>
+    
+ <div style="margin: 15px 0; text-align: center;">
+    <a href="#videoModal" class="btn">Ver video explicativo</a>
+  </div>
+
+  <div class="cuadro-regresar">
+    <a href="../Pag_Principal.html">⬅️ Regresar</a>
+  </div>
+</div>
+
+<div id="videoModal" class="modal">
+  <div class="modal-content">
+    <a href="#" class="close">&times;</a>
+   <iframe width="1257" height="707" src="https://www.youtube.com/embed/dCZ0PceFNcY" title="Case.." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+</div>
+<script>
+  const closeBtn = document.querySelector('.close');
+  const iframe = document.querySelector('#videoModal iframe');
+
+  closeBtn.addEventListener('click', () => {
+    iframe.src = iframe.src;  
+  });
+</script>
+</body>
+</html>

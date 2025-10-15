@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ratón - Parte Externa</title>
+  <link rel="stylesheet" href="css/ratón.css">
+</head>
+<body>
+  <div class="contenido">
+    <h1>🖱️ Ratón (Mouse)</h1>
+    <div class="media">
+      <div class="texto">
+        <p>El <strong>ratón</strong> es un dispositivo de entrada que permite al usuario interactuar con la computadora mediante un cursor en la pantalla.</p>
+
+        <h2>Características del Ratón</h2>
+        <ul>
+          <li><strong>Tipos:</strong> Óptico, láser, mecánico, inalámbrico, alámbrico.</li>
+          <li><strong>Botones:</strong> Generalmente dos botones y una rueda de desplazamiento.</li>
+          <li><strong>Conectividad:</strong> USB, Bluetooth, PS/2.</li>
+          <li><strong>Ergonomía:</strong> Diseño para uso cómodo y reducción de fatiga.</li>
+        </ul>
+      </div>
+      <div class="imagen">
+        <img src="Imagenes/mouse.webp" alt="Ratón de computadora">
+      </div>
+    </div>
+
+    <div style="margin: 15px 0; text-align: center;">
+      <a href="#videoModal" class="btn">Ver video explicativo</a>
+    </div>
+
+    <div class="cuadro-regresar">
+      <a href="../Pag_Principal.html">⬅️ Regresar  </a>
+    </div>
+  </div>
+ 
+  <div id="videoModal" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close">&times;</a>
+      <iframe width="1248" height="707" src="https://www.youtube.com/embed/7qP6m94y-YQ"
+        title="¿Qué es un Ratón?" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+
+  <script>
+    const videoModal = document.getElementById('videoModal');
+    const btnVideo = document.querySelector('.btn');
+    const closeBtn = document.querySelector('.close');
+    const iframe = document.querySelector('#videoModal iframe');
+
+    btnVideo.addEventListener('click', (e) => {
+      e.preventDefault();
+      videoModal.classList.add('show');
+    });
+
+    closeBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      videoModal.classList.remove('show');
+      iframe.src = iframe.src; // Pausar video
+    });
+
+    window.addEventListener('click', (e) => {
+      if (e.target === videoModal) {
+        videoModal.classList.remove('show');
+        iframe.src = iframe.src;
+      }
+    });
+  </script>
+</body>
+</html>

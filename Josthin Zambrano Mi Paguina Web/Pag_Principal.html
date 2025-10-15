@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Partes del Computador</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<header>
+  <img src="Imagenes/logo..png" alt="Logo" class="logo">
+  <h1>ProTech  Systems  Josthin Zambrano</h1>
+  <span class="menu-toggle" onclick="document.querySelector('nav').classList.toggle('show')">☰</span>
+  <nav>
+    <a onclick="mostrarSeccion('inicio')">Inicio</a>
+  
+    <div id="menuInternas">
+      <a id="btnPartesInternas">Partes Internas ▼</a>
+      <div class="submenu-column" id="submenuPartesInternas">
+        <ul>
+          <li><a href="Partes Internas/case.html">🖥️Case</a></li>
+          <li><a href="Partes Internas/placa-madre.html">🔧Placa Madre (Motherboard)</a></li>
+          <li><a href="Partes Internas/procesador.html">⚙️Procesador (CPU)</a></li>
+          <li><a href="Partes Internas/memoria-ram.html">🧠Memoria RAM</a></li>
+          <li><a href="Partes Internas/disco-duro.html">💾Disco Duro / SSD</a></li>
+          <li><a href="Partes Internas/buses.html">🔌Buses De Datos</a></li>
+          <li><a href="Partes Internas/fuente-de-poder.html">🔌Fuente de Poder</a></li>
+          <li><a href="Partes Internas/usb.html">🔌USB</a></li>
+          <li><a href="Partes Internas/ccd.html">📷CCD</a></li>
+          <li><a href="Partes Internas/dvd.html">💿DVD</a></li>
+          <li><a href="Partes Internas/expansion.html">💳Tarjeta De Expansion</a></li>
+          <li><a href="Partes Internas/cooler.html">🌀Cooler</a></li>
+          <li><a href="Partes Internas/ventiladores.html">❄️Ventilador de la computadora y Sistema de Enfriamiento</a></li>
+           <li><a href="Partes Internas/ensamblajeyconexion.html">🔧Ensamblaje y Conexión</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="menuExternas">
+      <a id="btnPartesExternas">Partes Externas ▼</a>
+      <div class="submenu-column" id="submenuPartesExternas">
+      <ul>
+  <li><a href="Partes Externas/monitor.html">🖥️ Monitor</a></li>
+  <li><a href="Partes Externas/teclado.html">⌨️ Teclado</a></li>
+  <li><a href="Partes Externas/ratón.html">🖱️ Ratón (Mouse)</a></li>
+  <li><a href="Partes Externas/impresora.html">🖨️ Impresora</a></li>
+  <li><a href="Partes Externas/altavoces.html">🔊 Altavoces</a></li>
+  <li><a href="Partes Externas/micrófono.html">🎤 Micrófono</a></li>
+  <li><a href="Partes Externas/webcam.html">📷 Webcam</a></li>
+  <li><a href="Partes Externas/scanner.html">📠Scanner</a></li>
+  <li><a href="Partes Externas/proyector.html">📽️Proyector</a></li>
+</ul>
+      </div>
+    </div>
+  <div id="menuContacto">
+  <a id="btnContacto">Contacto ▼</a>
+</div>
+</nav>
+</header> 
+
+<div id="overlay"></div>
+
+<div id="modalContacto">
+  <div style="text-align:center; margin-bottom:15px;">
+    <img src="Imagenes/josthin.jpg" alt="Josthin Zambrano" style="width:100px; height:100px; border-radius:50%; object-fit:cover; border:2px solid #1e3a8a;">
+  </div>
+
+  <h1>📩 Contáctame</h1>
+  <ul>
+    <li>*Josthin Zambrano</li>
+    <li>📞 593+968569134</li>
+    <li>📧empresamantenimiento@gmail.com</li>
+    <li>📍Ecuador</li>
+  </ul>
+  <form class="formulario" action="enviar.php" method="post">
+    <label for="nombre">👤 Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="correo">📧 Correo electrónico:</label>
+    <input type="email" id="correo" name="correo" required>
+
+    <label for="asunto">📝 Asunto:</label>
+    <input type="text" id="asunto" name="asunto" required>
+
+    <label for="mensaje">💬 Mensaje:</label>
+    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+    <button type="submit" class="btn">Enviar mensaje</button>
+  </form>
+</div>
+<section id="inicio">
+  <div class="contenedor-inicio">
+    <div class="texto-inicio">
+      <h1>Mantenimiento De PCs</h1>
+      <p>Mantener la computadora en óptimas condiciones de funcionamiento es crucial para evitar problemas y lograr tus objetivos laborales o de estudio con la mejor calidad y comodidad posibles.</p>
+      <h2>Tipos De Mantenimiento De La PC</h2>
+      <p><strong>Preventivo:</strong> Provee mantenimiento al hardware del equipo de cómputo a través de la limpieza de componentes físicos, considerando las recomendaciones del fabricante.</p>
+      <p><strong>Correctivo:</strong> Este mantenimiento se lleva a cabo cuando ya se ha identificado un problema o daño.</p>
+
+      <h2>Objetivo Del Mantenimiento</h2>
+      <p><strong>Prolongar la Vida Útil:</strong> Extender la vida útil de los componentes mediante cuidados adecuados y reparaciones oportunas.</p>
+      <p><strong>Mejorar la Seguridad:</strong> Reduce riesgos de accidentes y aumenta la seguridad general del entorno de trabajo.</p>
+
+      <h2>Implementación de Procedimientos</h2>
+      <p><strong>Registro de Mantenimientos:</strong> Llevar un seguimiento de las intervenciones realizadas para prever futuros requerimientos.</p>
+      <p><strong>Capacitación del Personal:</strong> Asegurar que el personal esté capacitado en protocolos de mantenimiento y seguridad.</p>
+    </div>
+
+    <div class="imagenes-inicio" style="margin-top:30px;">
+      <img src="Imagenes/ooo.webp" alt="Imagen 1">
+      <img src="Imagenes/OIP.jpeg" alt="Imagen 2">
+    </div>
+  </div>
+</section>
+
+<script>
+  const btnInternas = document.getElementById('btnPartesInternas');
+  const submenuInternas = document.getElementById('submenuPartesInternas');
+
+  const btnExternas = document.getElementById('btnPartesExternas');
+  const submenuExternas = document.getElementById('submenuPartesExternas');
+
+  const btnContacto = document.getElementById('btnContacto');
+  const modalContacto = document.getElementById('modalContacto');
+  const overlay = document.getElementById('overlay');
+
+  btnInternas.addEventListener('click', (e) => {
+    e.stopPropagation();
+    toggleSubmenu(submenuInternas);
+    submenuExternas.style.display = 'none';
+    modalContacto.style.display = 'none';
+    overlay.style.display = 'none';
+  });
+
+  btnExternas.addEventListener('click', (e) => {
+    e.stopPropagation();
+    toggleSubmenu(submenuExternas);
+    submenuInternas.style.display = 'none';
+    modalContacto.style.display = 'none';
+    overlay.style.display = 'none';
+  });
+
+  btnContacto.addEventListener('click', (e) => {
+    e.stopPropagation();
+    modalContacto.style.display = 'block';
+    overlay.style.display = 'block';
+    submenuInternas.style.display = 'none';
+    submenuExternas.style.display = 'none';
+  });
+
+  overlay.addEventListener('click', () => {
+    modalContacto.style.display = 'none';
+    overlay.style.display = 'none';
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!modalContacto.contains(e.target) && e.target !== btnContacto) {
+      modalContacto.style.display = 'none';
+      overlay.style.display = 'none';
+    }
+  });
+
+  function toggleSubmenu(submenu) {
+    submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+  }
+</script>
+
+</body>
+</html>

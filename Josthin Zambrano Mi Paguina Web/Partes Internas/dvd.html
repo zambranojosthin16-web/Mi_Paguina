@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>💿Unidad DVD</title>
+  <link rel="stylesheet" href="Style/dvd.css">
+</head>
+<body>
+  <div class="contenido">
+    <h1>💿 Unidad DVD</h1>
+    <div class="media">
+      <div class="texto">
+        <p>La <strong>unidad DVD</strong> es un dispositivo que permite leer y, en algunos casos, grabar discos ópticos como CDs y DVDs. Aunque ha sido reemplazada en gran parte por memorias USB y almacenamiento en la nube.</p>
+        <h2>Características del DVD</h2>
+  <ul>
+    <li><strong>Almacenamiento Óptico:</strong> Guarda datos, videos y música en formato digital.</li>
+    <li><strong>Compatibilidad:</strong> Se puede leer en reproductores de DVD y computadoras.</li>
+    <li><strong>Portabilidad:</strong> Fácil de transportar y compartir información.</li>
+  </ul>
+      </div>
+      <div class="imagen">
+        <img src="Imagenes/dvd.jpg" alt="Unidad DVD">
+      </div>
+    </div>
+    
+    <div style="margin: 15px 0; text-align: center;">
+      <a href="#videoModal" class="btn">Ver video explicativo</a>
+    </div>
+
+    <div class="cuadro-regresar">
+      <a href="../Pag_Principal.html">⬅️ Regresar</a>
+    </div>
+  </div>
+
+  <div id="videoModal" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close">&times;</a>
+     <iframe width="1248" height="707" src="https://www.youtube.com/embed/DN45n86DoMM" title="DVD.." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <script>
+    const closeBtn = document.querySelector('.close');
+    const iframe = document.querySelector('#videoModal iframe');
+
+    closeBtn.addEventListener('click', () => {
+      iframe.src = iframe.src;  
+    });
+  </script>
+</body>
+</html>

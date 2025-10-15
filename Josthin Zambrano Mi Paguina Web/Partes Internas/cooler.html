@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>🌀Cooler</title>
+  <link rel="stylesheet" href="Style/cooler.css">
+</head>
+<body>
+  <div class="contenido">
+    <h1>🌀 Cooler</h1>
+    <div class="media">
+      <div class="texto">
+        <p>El <strong>Cooler</strong> es un componente esencial del sistema de refrigeración de una computadora. Su función principal es disipar el calor generado por el <strong>procesador</strong> u otros componentes, ayudando a mantener una temperatura óptima y evitando el sobrecalentamiento.</p>
+        <h2>Características del Cooler</h2>
+        <ul>
+          <li><strong>Enfriamiento:</strong> Disipa el calor del procesador y otros componentes.</li>
+          <li><strong>Prevención:</strong> Evita sobrecalentamiento y daños en la PC.</li>
+          <li><strong>Silencioso o Potente:</strong> Puede variar según el diseño y la velocidad del ventilador.</li>
+        </ul>
+      </div>
+      <div class="imagen">
+        <img src="Imagenes/cooler..jpg" alt="Cooler del procesador">
+      </div>
+    </div>
+    
+    <div style="margin: 15px 0; text-align: center;">
+      <a href="#videoModal" class="btn">Ver video explicativo</a>
+    </div>
+
+    <div class="cuadro-regresar">
+      <a href="../Pag_Principal.html">⬅️ Regresar</a>
+    </div>
+  </div>
+
+  <div id="videoModal" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close">&times;</a>
+      <iframe width="1248" height="707" 
+        src="https://www.youtube.com/embed/WPx2QUNdHj0"
+        title="Ventilador" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const closeBtn = document.querySelector('.close');
+      const iframe = document.querySelector('#videoModal iframe');
+
+      closeBtn.addEventListener('click', () => {
+        iframe.src = iframe.src;  
+      });
+    });
+  </script>
+</body>
+</html>

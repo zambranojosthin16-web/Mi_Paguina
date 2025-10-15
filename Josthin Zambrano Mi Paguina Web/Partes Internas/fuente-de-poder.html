@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ºFuente de Poder</title>
+  <link rel="stylesheet" href="Style/fuente.css">
+</head>
+<body>
+  <div class="contenido">
+    <h1>🔌Fuente de Poder</h1>
+    <div class="media">
+      <div class="texto">
+        <p>La fuente de poder es uno de los componentes esenciales de una computadora, ya que se encarga de convertir la energía eléctrica de la corriente alterna (AC) de la red eléctrica en corriente continua (DC) que los componentes internos de la computadora pueden usar. Sin ella, la computadora no podría funcionar.Convierte la corriente eléctrica en energía utilizable para los componentes del computador. Su potencia debe ser adecuada para el sistema.</p>
+        <h2>Caracteristica de la Fuente de Poder</h2>
+  <ul>
+    <li><strong>Energía:</strong> Provee electricidad a la PC.</li>
+    <li><strong>Protección:</strong> Evita daños por sobrecarga.</li>
+    <li><strong>Eficiencia:</strong> Reduce desperdicio de energía.</li>
+  </ul>
+      </div>
+      <div class="imagen">
+        <img src="Imagenes/fuentepoder.jpg" alt="Fuente de Poder">
+      </div>
+    </div>
+ 
+    <div style="margin: 15px 0; text-align: center;">
+      <a href="#videoModal" class="btn">Ver video explicativo</a>
+    </div>
+ 
+    <div class="cuadro-regresar">
+      <a href="../Pag_Principal.html">⬅️ Regresar</a>
+    </div>
+  </div>
+ 
+  <div id="videoModal" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close">&times;</a>
+      <iframe width="1345" height="762" src="https://www.youtube.com/embed/_M72QsNLXOc" title="Fuente De Poder " frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+  
+  <script>
+    const closeBtn = document.querySelector('.close');
+    const iframe = document.querySelector('#videoModal iframe');
+
+    closeBtn.addEventListener('click', () => {
+      iframe.src = iframe.src;  
+    });
+  </script>
+</body>
+</html>

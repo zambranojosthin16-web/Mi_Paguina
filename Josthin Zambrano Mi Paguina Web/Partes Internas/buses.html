@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>🔌Buses de Datos</title>
+  <link rel="stylesheet" href="Style/buses.css">
+</head>
+<body>
+  <div class="contenido">
+    <h1>🔌 Buses de Datos</h1>
+    <div class="media">
+      <div class="texto">
+        <p>Los <strong>buses de datos</strong> son canales o líneas de comunicación que permiten transferir información entre los distintos componentes de una computadora, como el procesador, la memoria RAM, y otros dispositivos. </p>
+    <h2>Características de una Base de Datos</h2>
+  <ul>
+    <li><strong>Organización:</strong> Datos estructurados y fáciles de manejar.</li>
+    <li><strong>Acceso Rápido:</strong> Consultas eficientes y seguras.</li>
+    <li><strong>Sin Redundancia:</strong> Evita duplicar información.</li>
+  </ul>
+      </div>
+      <div class="imagen">
+        <img src="Imagenes/buses.jpg" alt="Buses de datos en una computadora">
+      </div>
+    </div>
+   <div style="margin: 15px 0; text-align: center;">
+    <a href="#videoModal" class="btn">Ver video explicativo</a>
+  </div>
+
+  <div class="cuadro-regresar">
+    <a href="../Pag_Principal.html">⬅️ Regresar</a>
+  </div>
+</div>
+
+<div id="videoModal" class="modal">
+  <div class="modal-content">
+    <a href="#" class="close">&times;</a>
+    <iframe width="1248" height="707" src="https://www.youtube.com/embed/MqguWnlXaW0" title="Buses De Datos " frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+</div>
+<script>
+  const closeBtn = document.querySelector('.close');
+  const iframe = document.querySelector('#videoModal iframe');
+
+  closeBtn.addEventListener('click', () => {
+    iframe.src = iframe.src;  
+  });
+</script>
+</body>
+</html>

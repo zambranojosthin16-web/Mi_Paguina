@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>⚙️Procesador (CPU)</title>
+  <link rel="stylesheet" href="Style/procesador.css">
+</head>
+<body>
+  <div class="contenido">
+    <h1>⚙️ Procesador (CPU)</h1>
+    <div class="media">
+      <div class="texto">
+        <p>El procesador es el cerebro del computador. Ejecuta instrucciones, realiza cálculos y coordina todas las tareas del sistema.</p>
+        <h2>Caracteristicas del Procesador (CPU)</h2>
+  <ul>
+    <li><strong>Velocidad:</strong> Ejecuta instrucciones rápidamente.</li>
+    <li><strong>Control:</strong> Gestiona todas las operaciones de la PC.</li>
+    <li><strong>Procesamiento:</strong> Realiza cálculos y tareas del sistema.</li>
+  </ul>
+      </div>
+      <div class="imagen">
+        <img src="Imagenes/procesador..webp" alt="Procesador (CPU)">
+      </div>
+    </div>
+     <div style="margin: 15px 0; text-align: center;">
+    <a href="#videoModal" class="btn">Ver video explicativo</a>
+  </div>
+
+  <div class="cuadro-regresar">
+    <a href="../Pag_Principal.html">⬅️ Regresar</a>
+  </div>
+</div>
+
+<div id="videoModal" class="modal">
+  <div class="modal-content">
+    <a href="#" class="close">&times;</a>
+   <iframe width="1248" height="707" src="https://www.youtube.com/embed/uwa9HBDvXD0" title="Procesador " frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+</div>
+<script>
+  const closeBtn = document.querySelector('.close');
+  const iframe = document.querySelector('#videoModal iframe');
+
+  closeBtn.addEventListener('click', () => {
+    iframe.src = iframe.src;  
+  });
+</script>
+</body>
+</html>
+

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>📶Tarjeta de Expansión</title>
+  <link rel="stylesheet" href="Style/expansion.css">
+  <style>
+    
+    #videoModal {
+      display: none;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.7);
+      z-index: 1000;
+    }
+    .modal-content {
+      position: relative;
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      max-width: 850px;
+      width: 90%;
+      padding: 0;
+    }
+    .close {
+      position: absolute;
+      top: 10px; right: 15px;
+      font-size: 30px;
+      font-weight: bold;
+      color: #000;
+      cursor: pointer;
+      user-select: none;
+      z-index: 1001;
+    }
+    iframe {
+      display: block;
+      width: 100%;
+      height: 480px;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="contenido">
+    <h1>📶 Tarjeta de Expansión</h1>
+    <div class="media">
+      <div class="texto">
+        <p>Una <strong>tarjeta de expansión</strong> es un componente que se instala en las ranuras de expansión de la placa madre para agregar funcionalidades adicionales a una computadora. Estas tarjetas pueden mejorar el rendimiento gráfico, agregar puertos adicionales, permitir la conexión a redes, entre otros.</p>
+        <p>Algunos ejemplos comunes son las tarjetas gráficas, de sonido, de red, capturadoras de video y controladoras USB.</p>
+      </div>
+      <div class="imagen">
+        <img src="Imagenes/tarjetadeexpansion.jpg" alt="Tarjeta de Expansión">
+      </div>
+    </div>
+
+    <div style="margin: 15px 0; text-align: center;">
+      <a href="#" class="btn" id="abrirVideo">Ver video explicativo</a>
+    </div>
+
+    <div class="cuadro-regresar">
+      <a href="../Pag_Principal.html">⬅️ Regresar</a>
+    </div>
+  </div>
+ 
+  <div id="videoModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <iframe id="youtubeVideo" src="" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen
+              title="Tarjeta de Expansión"></iframe>
+    </div>
+  </div>
+
+  <script>
+    const abrirVideo = document.getElementById('abrirVideo');
+    const modal = document.getElementById('videoModal');
+    const closeBtn = document.querySelector('.close');
+    const youtubeVideo = document.getElementById('youtubeVideo');
+
+    abrirVideo.addEventListener('click', (e) => {
+      e.preventDefault();
+      youtubeVideo.src = "https://www.youtube.com/embed/FfjUoqJgMbA?autoplay=1";
+      modal.style.display = "flex";
+    });
+
+    closeBtn.addEventListener('click', () => {
+      youtubeVideo.src = "";  
+      modal.style.display = "none";
+    });
+ 
+    window.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        youtubeVideo.src = "";
+        modal.style.display = "none";
+      }
+    });
+  </script>
+</body>
+</html>
